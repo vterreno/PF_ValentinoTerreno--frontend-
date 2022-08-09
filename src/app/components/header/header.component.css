@@ -97,5 +97,8 @@ header {
     .menu-desktop a:hover {
         color: #c3beec;
     }
-  
+    
+    .menu-d-items a {
+        scroll-behavior: smooth;
+    }
 }

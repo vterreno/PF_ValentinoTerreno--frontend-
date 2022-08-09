@@ -50,6 +50,7 @@
     background-color: #f95f35;
 }
 
+
 @media (min-width:760px) {
     .container-titulo h2 {
         font-size: 2em;
@@ -73,4 +74,9 @@
     .boton-cv button {
         font-size: 1em;
     }
+
+    #acerca-de-mi {
+        scroll-margin-top: 10.5em;
+    }
 }
+
