@@ -1,0 +1,44 @@
+
+<header>
+    <div class="menu-principal" id="menu-principal">
+        <div class="menu-logo">
+            <a href="#"><img src="../../../assets/logo_argentinaPrograma.png" alt="logo_argentinaPrograma"></a>
+        </div>
+
+        <div class="menu-desktop">
+            <nav class="menu-d-items">
+                <a href="../../../app/app.component.html" routerLink="contacto">ACERCA DE MI</a>
+                <a href="#">PROYECTOS</a>
+                <a href="app-contacto">CONTACTO</a>
+                <a href="#">LOGIN</a>
+            </nav>
+
+        <!-- Mobile design -->
+        <div>
+            <button class="menu-btn" id="menu-btn">
+                <img src="../../../assets/menu.png" alt="menu">
+            </button>
+        </div>
+        </div>
+    
+        
+    </div>
+   
+ 
+        <nav class="menu-items" id="menu-items" >
+            <a href="#">ACERCA DE MI</a>
+            <a href="#">PROYECTOS</a>
+            <a href="#contacto">CONTACTO</a>
+            <a href="#">LOGIN</a>
+        </nav>
+    
+</header>
+
+<script>
+    const menuBtn = document.querySelector('#menu-btn')
+    const menuItems = document.querySelector('#menu-items')
+
+    menuBtn?.addEventListener('click', ( ) => {
+    menuItems?.classList.toggle('activate')
+    })
+</script>

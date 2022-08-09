@@ -1,0 +1,139 @@
+
+.educacion-titulo {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700; 
+    margin-top: 2em;
+    padding: 0.2em 0em;
+}
+
+.educacion-titulo h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 2.5em;
+    font-size: 1em;
+    font-weight: 1000;
+}
+
+.educacion-titulo hr {
+    width: 15%;
+    height: 0.3em;
+    background-color: black;
+}
+
+.educacion-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0.5em;
+    padding: 0em 1em;
+}
+
+.educacion-cont-cont {
+    font-family: 'Mulish';
+    padding-right: 0.5em;
+}
+
+.educacion-cont-cont h2{
+    padding: 0;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.educacion-cont-cont h4{
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+}
+
+.educacion-cont-logo {
+    padding-left: 1em;
+    padding-right: 1.5em;
+}
+
+.experiencias-titulo {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700; 
+    margin-top: 5em;
+    padding: 0.2em 0em;
+}
+
+.experiencias-titulo h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 2em;
+    font-size: 1em;
+    font-weight: 1000;
+}
+
+.experiencias-titulo hr {
+    width: 15%;
+    height: 0.3em;
+    background-color: black;
+}
+
+.experiencias {
+    padding-bottom: 1em;
+}
+
+@media (min-width:800px) {
+    .contenedor-edu-exp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 6%;
+    }
+
+
+    .experiencias-titulo {
+        margin-top: 0;
+    }
+
+    .educacion-titulo {
+        margin-top: 0;
+    }
+
+    .experiencias-titulo h2 {
+        margin-top: 0;
+        font-size: 2em;
+    }
+
+    .educacion-titulo h2 {
+        margin-top: 0;
+        font-size: 2em;
+    }
+
+    .experiencias {
+        padding: 0;
+    }
+
+    .educacion-cont-cont {
+        font-size: 1.2em;
+    }
+
+    .educacion-cont-logo{
+        font-size: 2em;
+     }
+
+    .educacion-cont-logo img {
+       font-size: 2em;
+    }
+}
+
+@media (max-width:800px) {
+    .experiencias-titulo h2 {
+        font-size: 2em;
+    }
+
+    .educacion-titulo h2 {
+        font-size: 1.5em;
+    }
+
+    .experiencias-titulo h2 {
+        font-size: 1.5em;
+    }
+}
+

@@ -1,0 +1,16 @@
+.footer {
+    background-color: #403D58;
+    color: white;
+    font-family: 'Mulish';
+    margin-top: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em 1em;
+    font-size: 0.8em;
+}
+
+.footer p {
+    margin: 0;
+}
