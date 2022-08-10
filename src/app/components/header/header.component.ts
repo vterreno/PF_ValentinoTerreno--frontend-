@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
+
 export class HeaderComponent implements OnInit {
 
   constructor() { }
@@ -19,5 +20,4 @@ const menuItems = document.querySelector('#menu-items')
 
 menuBtn?.addEventListener('click', ( ) => {
   menuItems?.classList.toggle('activate')
-})
-
+  })
