@@ -50,6 +50,9 @@
     background-color: #f95f35;
 }
 
+#acerca-de-mi {
+    scroll-margin-top: 11em;
+}
 
 @media (min-width:760px) {
     .container-titulo h2 {

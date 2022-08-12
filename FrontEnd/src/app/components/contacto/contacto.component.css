@@ -54,6 +54,9 @@
     justify-content: center;
 }
 
+#contacto {
+    scroll-margin-top: 4.5em;
+}
 @media (min-width:760px) {
     .contacto-titulo h2 {
         font-size: 2em;

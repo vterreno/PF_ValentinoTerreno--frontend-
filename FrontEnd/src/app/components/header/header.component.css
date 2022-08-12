@@ -64,6 +64,10 @@ header {
     display: none;
 }
 
+.menu-items {
+    scroll-behavior: smooth;
+}
+
 @media (min-width:760px) {
     .menu-btn {
        display: none;

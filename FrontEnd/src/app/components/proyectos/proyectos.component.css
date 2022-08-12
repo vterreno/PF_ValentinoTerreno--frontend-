@@ -122,7 +122,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
-        gap: 3em;
+        
+        column-gap: 3em;
         margin: 0 5em;
     }
 
@@ -145,6 +146,11 @@
 
     #proyectos {
         scroll-margin-top: 4em;
+    }
+
+    .superior {
+        align-items: flex-start;
+        margin: 0;
     }
 
 
