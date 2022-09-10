@@ -14,9 +14,10 @@ export class HeaderComponent implements OnInit {
   }
 
   OnClick() {
-    const menuBtn = document.querySelector('#menu-btn')
-    const menuItems = document.querySelector('#menu-items')
-    const menuLinks = document.querySelectorAll('#menu-items a[href^="#"]')
+    let menuBtn = document.querySelector('#menu-btn')
+    let menuItems = document.querySelector('#menu-items')
+    let menuLinks = document.querySelectorAll('#menu-items a[href^="#"]')
+
 
     menuBtn?.addEventListener('click', ( ) => {
       menuItems?.classList.toggle('activate')

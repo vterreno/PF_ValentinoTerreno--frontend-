@@ -206,6 +206,21 @@
     width: 40%;
     animation: italiano 3s;
 }
+   
+/*Animacion fade-in */
+.animacion { 
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 0.7s ease;
+    position: none;
+}
+
+
+.animacion.active {
+    transform: none;
+    opacity: 1;
+    position: none;
+}
 
 @keyframes ingles {
     0% {
@@ -231,7 +246,21 @@
        display: flex;
        align-items: center;
        justify-content: center;
-      
+    }
+    
+    /*Animacion fade-in */
+    .animacion { 
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 0.7s ease;
+        position: none;
+    }
+
+
+    .animacion.active {
+        transform: none;
+        opacity: 1;
+        position: none;
     }
 
     .skills-tecnicas {

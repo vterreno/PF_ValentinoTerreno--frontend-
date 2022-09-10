@@ -106,4 +106,8 @@ header {
     .menu-d-items a {
         scroll-behavior: smooth;
     }
+
+    .menu-items {
+        display: none;
+    }
 }
