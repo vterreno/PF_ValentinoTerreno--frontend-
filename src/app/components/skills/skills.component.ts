@@ -25,6 +25,7 @@ function revelar() {
     let windowHeight = window.innerHeight;
     let revealTop = reveals[i].getBoundingClientRect().top;
     let revealPoint = 25;
+    let windowTime = window.setTimeout
 
     if (revealTop < windowHeight - revealPoint) {
       reveals[i].classList.add('active')

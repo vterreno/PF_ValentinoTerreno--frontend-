@@ -1,6 +1,8 @@
 .skills-background {
     background-color: #F2EFEA;
-    margin-top: 5em;
+    margin-top: 6em;
+    scroll-margin-top: 5em;
+    padding-bottom: 1.6em;
 }
 
 .skills-titulo {
@@ -252,15 +254,13 @@
     .animacion { 
         transform: translateY(150px);
         opacity: 0;
-        transition: all 0.7s ease;
-        position: none;
+        transition: all 0.9s ease;
+        
     }
 
 
-    .animacion.active {
-        transform: none;
+    .animacion.active { 
         opacity: 1;
-        position: none;
     }
 
     .skills-tecnicas {
