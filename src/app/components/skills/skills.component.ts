@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css']
 })
+
 export class SkillsComponent implements OnInit {
 
   constructor() { }
@@ -29,8 +30,8 @@ function revelar() {
 
     if (revealTop < windowHeight - revealPoint) {
       reveals[i].classList.add('active')
-    } else {
-      reveals[i].classList.remove('active')
     }
   }
-}
+} 
+
+
