@@ -12,7 +12,8 @@
                 <a href="#proyectos">PROYECTOS</a>
                 <a href="#contacto">CONTACTO</a>
                 <!-- Cambiar display-->
-                <a href="/login">LOGIN</a>
+                <a (click)="login()" *ngIf="!isLogged">LOGIN</a>
+                <a (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</a>
             </nav>
 
         <!-- Mobile design -->
@@ -28,7 +29,8 @@
             <a href="#acerca-de-mi">ACERCA DE MI</a>
             <a href="#proyectos">PROYECTOS</a>
             <a href="#contacto">CONTACTO</a>
-            <a href="/login">LOGIN</a>
+            <a (click)="login()" *ngIf="!isLogged">LOGIN</a>
+            <a (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</a>
         </nav>
     
 </header>

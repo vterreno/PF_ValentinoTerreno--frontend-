@@ -68,6 +68,9 @@ header {
     scroll-behavior: smooth;
 }
 
+a {
+    cursor: pointer;
+}
 @media (min-width:760px) {
     .menu-btn {
        display: none;
