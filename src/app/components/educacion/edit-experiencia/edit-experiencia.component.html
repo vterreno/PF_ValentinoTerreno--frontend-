@@ -1,0 +1,27 @@
+<body>
+    <div class="container">
+        <div id="header">
+            <a href="#"><img src="../../../assets/cruz.png" alt="Salir"></a>
+        </div>
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+            <div class="form-group">
+                <label for="nombreE">Puesto laboral</label>
+                <input type="text" name="nombreE" id="nombreE" class="input" [(ngModel)]="expe.nombreE" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="descripcionE">Descripcion del trabajo realizado</label>
+                <input type="text" name="descripcionE" id="descripcionE" class="input" [(ngModel)]="expe.descripcionE" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="anio">Años de trabajo</label>
+                <input type="text" name="anio" id="anio" class="input" [(ngModel)]="expe.anio" required>
+            </div>
+    
+            <div class="bt-agg">
+                <button><h4>Editar informacion</h4></button>
+            </div>
+        </form>
+    </div>
+</body>

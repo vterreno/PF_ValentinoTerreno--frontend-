@@ -1,83 +1,71 @@
+<!-- EDUCACION -->
 <div class="contenedor-edu-exp">
     <div class="educacion">
         <div class="educacion-titulo">
             <h2>Educación</h2>
             <hr>
         </div>
-        
-        <div class="educacion-contenido animacion">
-            <div class="educacion-cont-logo">
-                <img src="../../../assets/Cosito_educacion.png" alt="">
-            </div>
-            <div class="educacion-cont-cont">
-                <h2>Instituto del rosario</h2>
-                <h4>Bachiller completo en administración de empresas</h4>
-                <h4>2014 - 2021</h4>
-            </div>
-        </div>
-    
-        <div class="educacion-contenido animacion">
-            <div class="educacion-cont-logo">
-                <img src="../../../assets/Cosito_educacion.png" alt="">
-            </div>
-            <div class="educacion-cont-cont">
-                <h2>Cambrigde University - First Certificate</h2>
-                <h4>Examen internacional de inglés - Nota: 187 (FRC1)</h4>
-                <h4>2021</h4>
-            </div>
-        </div>
-    
-        <div class="educacion-contenido animacion">
-            <div class="educacion-cont-logo">
-                <img src="../../../assets/Cosito_educacion.png" alt="">
-            </div>
-            <div class="educacion-cont-cont">
-                <h2>Curso en Fundamentos de Bases de datos</h2>
-                <h4>Realizado en la Universidad Tecnológica Bs As</h4>
-                <h4>2022</h4>
+
+
+        <!-- TABLA EDUCACION -->
+        <div class="educacion-cont-cont">
+            <table>
+                <tr *ngFor="let Educacion of educacion">
+                    <td><img src="../../../assets/Cosito_educacion.png" alt=""></td>
+                    <td class="td-borde">
+                        <h2>{{Educacion.nombreE}}</h2>
+                        <h4>{{Educacion.descripcionE}}</h4>
+                        <h4>{{Educacion.anio}}</h4>
+                        <div class="bt-edicion">
+                            <button (click)="deleteEdu(Educacion.id)" *ngIf="isLogged"><img
+                                    src="../../../assets/delete (1).png" alt="borrar"></button>
+                            <Button routerLink="/editedu/{{Educacion.id}}" *ngIf="isLogged"><img
+                                    src="../../../assets/edit (1).png" alt="editar" id="img-tamaño"></Button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="bt-aggEdu">
+                <button type="button" *ngIf="isLogged" routerLink="/nuevaedu">
+                    <h4>Agregar Educacion</h4>
+                </button>
             </div>
         </div>
     </div>
-    
-    <div class="experiencias">
-        <div class="experiencias-titulo">
+</div>
+
+<!-- EXPERIENCIAS -->
+<div class="contenedor-edu-exp">
+    <div class="educacion">
+        <div class="educacion-titulo">
             <h2>Experiencias</h2>
             <hr>
         </div>
-        
-        <div class="educacion-contenido animacion">
-            <div class="educacion-cont-logo">
-                <img src="../../../assets/Cosito_educacion.png" alt="">
-            </div>
-            <div class="educacion-cont-cont">
-                <h2>Instituto del rosario</h2>
-                <h4>Bachiller completo en administración de empresas</h4>
-                <h4>2014 - 2021</h4>
-            </div>
-        </div>
-    
-        <div class="educacion-contenido animacion">
-            <div class="educacion-cont-logo">
-                <img src="../../../assets/Cosito_educacion.png" alt="">
-            </div>
-            <div class="educacion-cont-cont">
-                <h2>Instituto del rosario</h2>
-                <h4>Bachiller completo en administración de empresas</h4>
-                <h4>2014 - 2021</h4>
-            </div>
-        </div>
-    
-        <div class="educacion-contenido animacion">
-            <div class="educacion-cont-logo">
-                <img src="../../../assets/Cosito_educacion.png" alt="">
-            </div>
-            <div class="educacion-cont-cont">
-                <h2>Instituto del rosario</h2>
-                <h4>Bachiller completo en administración de empresas</h4>
-                <h4>2014 - 2021</h4>
+
+
+        <!-- TABLA EXPERIENCIAS -->
+        <div class="educacion-cont-cont">
+            <table>
+                <tr *ngFor="let Experiencia of expe">
+                    <td><img src="../../../assets/Cosito_educacion.png" alt=""></td>
+                    <td class="td-borde">
+                        <h2>{{Experiencia.nombreE}}</h2>
+                        <h4>{{Experiencia.descripcionE}}</h4>
+                        <h4>{{Experiencia.anio}}</h4>
+                        <div class="bt-edicion">
+                            <button (click)="deleteExp(Experiencia.id)" *ngIf="isLogged"><img
+                                    src="../../../assets/delete (1).png" alt="borrar"></button>
+                            <Button routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged"><img
+                                    src="../../../assets/edit (1).png" alt="editar" id="img-tamaño"></Button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="bt-aggEdu">
+                <button type="button" *ngIf="isLogged" routerLink="/nuevaexp" id="bt-exp">
+                    <h4>Agregar Experiencias</h4>
+                </button>
             </div>
         </div>
     </div>
-    
-    
 </div>

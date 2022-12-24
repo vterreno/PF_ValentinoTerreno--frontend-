@@ -15,6 +15,10 @@ import { LoginComponent } from './components/login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { InterceptorProvider } from './service/interceptor-service';
+import { NeweducacionComponent } from './components/educacion/new-educacion/new-educacion.component';
+import { EditeducacionComponent } from './components/educacion/edit-educacion/edit-educacion.component';
+import { NewExperienciaComponent } from './components/educacion/new-experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/educacion/edit-experiencia/edit-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { InterceptorProvider } from './service/interceptor-service';
     ContactoComponent,
     FooterComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    NeweducacionComponent,
+    EditeducacionComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent
   ],
   imports: [
     BrowserModule,

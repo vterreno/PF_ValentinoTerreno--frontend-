@@ -1,0 +1,114 @@
+body {
+    background-color: #d3d0ff;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.2em;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background-color: white;
+    border: 0.1em solid rgb(198, 198, 198);  
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1em;
+    padding: 2em;
+
+}
+
+.container input {
+    padding: 0.5em;
+    margin: 1em;
+    border-radius: 0.3em;
+    border: 0.1em solid rgb(198, 198, 198);
+
+}
+
+.container label {
+    color: #6966ac;
+    margin-left: 0.7em;
+}
+
+input:focus {
+    border-color:#d3d0ff;
+}
+
+.bt-agg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bt-agg button {
+    background-color: none;
+    width: 17em;
+    border-radius: 2em;
+    background-color: #8789C0;
+    border: 0em;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+h4 {
+    color: white;
+    font-size: 1em;
+}
+
+#header {
+    width: 20em;
+    border-radius: 1em;
+    display: flex;
+    background-color: #8789C0;
+    align-items: flex-end;
+    padding: 1em;
+    margin-bottom: 1em;
+    
+}
+
+
+#header a img{
+    height: 1.5em;
+    padding-right: 2em;
+    font-size: 0.5em
+}
+
+@media (max-width:500px) {
+
+    #header {
+        width: 87%;
+    }
+
+    #header a img {
+        padding-right: 0.5em;
+    }
+
+    .container {
+        font-size: 1em;
+        width: 300px;
+        height: fit-content;
+        padding: 0.7em;
+    }
+
+    .login-contenedor h1 {
+        padding: 0 0 10px 10px;
+    }
+    .login-input label {
+        font-size: 1.8em;
+    }
+
+
+    .login-registrarse {
+        font-size: 1.8em;
+    }
+
+}
+

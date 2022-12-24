@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0;
+    margin-bottom: 0em;
     margin-top: 2.5em;
     font-size: 1em;
     font-weight: 1000;
@@ -19,6 +19,7 @@
 .educacion-titulo hr {
     width: 15%;
     height: 0.3em;
+    margin-bottom: 1.5em;
     background-color: black;
 }
 
@@ -32,7 +33,6 @@
 
 .educacion-cont-cont {
     font-family: 'Mulish';
-    padding-right: 0.5em;
 }
 
 .educacion-cont-cont h2{
@@ -93,6 +93,75 @@
     position: none;
 }
 
+table td {
+    padding: 1em;
+}
+
+#bt-exp {
+    background-color: #fe8462;
+}
+
+.td-borde{
+    display: flex;
+    margin: 0em;
+    padding: 0em;
+    border-spacing: 0em;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.bt-aggEdu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+.bt-aggEdu h4 {
+    font-family: 'Mulish', sans-serif;
+    margin: 1em 0;
+    color: white;
+    font-size: 1.1em;
+}
+
+.bt-aggEdu button {
+    width: 15em;
+    border-radius: 2em;
+    background-color: #8789C0;
+    border: 0em;
+    cursor: pointer;
+}
+
+.bt-aggEdu button:hover {
+    background-color: #6b6ca4;
+}
+
+.bt-edicion {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.bt-edicion button{
+    padding-right: 1em;
+    cursor: pointer;
+    background-color: white;
+    text-decoration: none;
+    border: none;
+}
+
+.bt-edicion button img{
+    height: 2.2em;
+    width: 2.2em;
+}
+
+
+#img-tamaño {
+    height: 2.4em;
+    width: 2.4em;
+}
 
 @media (min-width:800px) {
     .contenedor-edu-exp {

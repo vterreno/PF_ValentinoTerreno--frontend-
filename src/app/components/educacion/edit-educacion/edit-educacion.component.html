@@ -1,0 +1,28 @@
+<body>
+    <div class="container">
+        <div id="header">
+            <a href="#"><img src="../../../assets/cruz.png" alt="Salir"></a>
+        </div>
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+            <div class="form-group">
+                <label for="nombreE">Nombre de la institucion</label>
+                <input type="text" name="nombreE" id="nombreE" class="input" [(ngModel)]="educacion.nombreE" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="descripcionE">Descripcion de estudios</label>
+                <input type="text" name="descripcionE" id="descripcionE" class="input" [(ngModel)]="educacion.descripcionE" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="anio">Años de estudio</label>
+                <input type="text" name="anio" id="anio" class="input" [(ngModel)]="educacion.anio" required>
+            </div>
+    
+            <div class="bt-agg">
+                <button><h4>Editar informacion</h4></button>
+            </div>
+        </form>
+    </div>
+</body>
+
