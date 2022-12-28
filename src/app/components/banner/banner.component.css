@@ -12,6 +12,9 @@
 
 .banner-fotoperfil {
     padding: 2em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner-mensaje {
@@ -29,6 +32,10 @@
 .banner-mensaje h6 {
     margin: 0;
     font-size: 0.8em;
+}
+
+.banner-fotoperfil img {
+    width: 50%;
 }
 
 @media (min-width:560px) {

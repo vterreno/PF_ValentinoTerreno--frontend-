@@ -152,22 +152,30 @@ table td {
     border: none;
 }
 
+#bt-exp:hover {
+    background-color: #cc5432;
+}
+
 .bt-edicion button img{
     height: 2.2em;
     width: 2.2em;
 }
-
 
 #img-tamaño {
     height: 2.4em;
     width: 2.4em;
 }
 
+.contenedor {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
 @media (min-width:800px) {
-    .contenedor-edu-exp {
+    .contenedor {
         display: flex;
-        align-items: center;
-        justify-content: center;
         margin-top: 6%;
     }
 
@@ -208,6 +216,16 @@ table td {
 }
 
 @media (max-width:800px) {
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bt-aggEdu button h4{
+        font-size: 1em;
+    }
+
     .experiencias-titulo h2 {
         font-size: 2em;
     }

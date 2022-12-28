@@ -1,6 +1,10 @@
 .container-titulo {
     font-family: 'Mulish', sans-serif;
     font-weight: 700; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .container-titulo h2 {
@@ -54,11 +58,33 @@
     scroll-margin-top: 7.5em;
 }
 
+#img-tamaño {
+    margin-top: 1em;
+    height: 3em;
+    width: 3em;
+}
+
+.bt-edit {
+    cursor: pointer;
+    background-color: white;
+    text-decoration: none;
+    border: none;
+    margin-bottom: 1em;
+}
+
 @media (min-width:760px) {
+    .container-titulo {
+        display: flex;
+        align-items:flex-end;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+    
     .container-titulo h2 {
         font-size: 2em;
         display: inline-block;
-        margin: 0em 1.2em;
+        margin-left: 1.2em;
+        margin-right: 0.3em;
         margin-top: 2em;
         margin-bottom: 0.5em;
         border-bottom: 6px solid black;

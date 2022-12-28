@@ -1,15 +1,22 @@
 <div class="container">
     <div class="container-titulo">
-        <h2 id="acerca-de-mi">Acerca de mi</h2>
-        <hr>
+        <div>
+            <h2 id="acerca-de-mi">Acerca de mi</h2>
+            <hr>
+        </div>
+        <div>
+            <Button routerLink="/editacercade/1" *ngIf="isLogged" class="bt-edit"><img
+                src="../../../assets/edit (1).png" alt="editar" id="img-tamaño"></Button>
+        </div>
+        
     </div>
 
     <div class="container-mensaje">
-        <p>Soy valentino, apasionado por la tecnologia, bases de datos e inteligencia artificial. Apunto a crecer profesionalmente como Desarrollador Web FullStack. Busco estar en constante formación y llevar lo aprendido a la práctica. Soy responsable, dedicado y curioso. Me encantaría formar parte de proyectos que me permitan desarrollarme tanto profesionalmente como personalmente y mejorar mis habilidades, así como también colaborar con un equipo de trabajo para cumplir objetivos y metas.</p>
+        <p>{{persona?.descripcion}}</p>
     </div>
 
     <div class="boton-cv">
-        <button><a href="#">Descargar CV</a></button>
+        <button><a href="{{persona?.pdf}}" download="CV">Descargar CV</a></button>
     </div>
 </div>
 
