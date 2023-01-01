@@ -25,6 +25,8 @@ import { environment } from '../environments/environment';
 import { provideStorage, getStorage } from '@angular/fire/storage';
 import { NewProyectoComponent } from './components/proyectos/new-proyecto/new-proyecto.component';
 import { EditProyectoComponent } from './components/proyectos/edit-proyecto/edit-proyecto.component';
+import { EditSkillComponent } from './components/skills/edit-skill/edit-skill.component';
+import { NewSkillComponent } from './components/skills/new-skill/new-skill.component';
 
 
 @NgModule({
@@ -46,7 +48,10 @@ import { EditProyectoComponent } from './components/proyectos/edit-proyecto/edit
     EditExperienciaComponent,
     EditAcercadeComponent,
     NewProyectoComponent,
-    EditProyectoComponent
+    EditProyectoComponent,
+    SkillsComponent,
+    EditSkillComponent,
+    NewSkillComponent
   ],
   imports: [
     BrowserModule,
