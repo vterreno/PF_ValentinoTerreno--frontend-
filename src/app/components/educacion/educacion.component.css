@@ -110,6 +110,9 @@ table td {
     align-items: flex-start;
     
 }
+#educacion {
+    scroll-margin-top: 7.3em
+}
 
 .bt-aggEdu {
     display: flex;

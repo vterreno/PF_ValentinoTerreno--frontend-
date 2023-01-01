@@ -71,7 +71,8 @@ header {
 a {
     cursor: pointer;
 }
-@media (min-width:760px) {
+
+@media (min-width:770px) {
     .menu-btn {
        display: none;
     }

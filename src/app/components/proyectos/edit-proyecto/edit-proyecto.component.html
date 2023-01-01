@@ -1,0 +1,44 @@
+<body>
+    <div class="container">
+        <div id="header">
+            <a href="#"><img src="../../../assets/cruz.png" alt="Salir"></a>
+        </div>
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+            <div class="form-group-nombre">
+                <div>
+                    <label for="titulo">Titulo proyecto</label>
+                    <input type="text" name="titulo" id="titulo" class="input" [(ngModel)]="proyecto.nombreP" required>
+                </div>
+                <div>
+                    <label for="descripcionP">Descripcion</label>
+                    <textarea type="text" name="descripcionP" id="descripcionP" class="input" [(ngModel)]="proyecto.descripcionP" required></textarea>
+                </div>
+                
+            </div>
+            <div class="link">
+                <div class="form-group">
+                    <label for="demo">Link demo</label>
+                    <input type="text" name="demo" id="demo" class="input" [(ngModel)]="proyecto.demo" required>
+                </div>
+    
+                <div class="form-group-descripcion">
+                    <label for="repo">Link repo</label>
+                    <input type="text" name="repo" id="repo" class="input" [(ngModel)]="proyecto.repo" required>
+                </div>
+            </div>
+            
+
+            <div class="form-group-nombre">
+                <div>
+                    <label for="img">Link imagen</label>
+                    <input type="file" name="img" id="img" class="input" [(ngModel)]="proyecto.img" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png">
+                </div>
+            </div>
+    
+            <div class="bt-agg">
+                <button><h4>Editar informacion</h4></button>
+            </div>
+
+        </form>
+    </div>
+</body>

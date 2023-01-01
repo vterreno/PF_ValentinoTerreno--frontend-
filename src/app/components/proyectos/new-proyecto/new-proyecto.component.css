@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(120deg, #ad5389, #3c1053);
+    background: linear-gradient(135deg, hsla(24, 100%, 61%, 1) 9%, hsla(229, 67%, 59%, 1) 98%, hsla(173, 87%, 59%, 1) 100%, hsla(211, 68%, 58%, 1) 100%);
     height: 100vh;
     width: 100%;
     display: flex;
@@ -15,26 +15,8 @@ div {
     flex-direction: column;
 }
 
-.form-group-nombre {
-    display: flex;
-    flex-direction: row;
-}
-
-.form-group-nombre input {
-    width: 20em;
-}
-
-
-.form-group-descripcion textarea {
-    resize: none;
-    width: 93%;
-    height: 9em;
-    margin: 1em;
-    padding: 0.5em;
-    font-family: Arial, Helvetica, sans-serif;
-}
 .container {
-    background: white;
+    background-color: white;
     border: 0.1em solid rgb(198, 198, 198);  
     width: fit-content;
     height: fit-content;
@@ -52,7 +34,7 @@ div {
 }
 
 .container label {
-    color: #3c1053;
+    color: #e16341;
     margin-left: 0.7em;
 }
 
@@ -70,14 +52,14 @@ input:focus {
     background-color: none;
     width: 17em;
     border-radius: 2em;
-    background-color: #ad5389;
+    background-color: #fe8462;
     border: 0em;
     cursor: pointer;
     margin-top: 2em;
 }
 
 .bt-agg button:hover {
-    background-color: #73375b;
+    background-color: #c7674d;
 }
 
 h4 {
@@ -86,15 +68,21 @@ h4 {
 }
 
 #header {
-    width: auto;
+    width: 20em;
     border-radius: 1em;
     display: flex;
-    background-color: #ad5389;
+    background-color: #fe8462;
     align-items: flex-end;
     padding: 1em;
     margin-bottom: 1em;
+    
 }
 
+.link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 #header a img{
     height: 1.5em;
@@ -102,53 +90,38 @@ h4 {
     font-size: 0.5em
 }
 
-.loading {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    background-color: #ffffff;
-    opacity: 80%;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#descripcionP {
+    resize: none;
+    width: 90%;
+    height: 5em;
+    margin: 1em;
+    padding: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.loading img{
-    width: 50%;
-}
-@media (max-width:500px) {
-    body {
-        height: 115vh;
-    }
 
-    .form-group-descripcion{
-        margin-right: 1.6em;
+@media (max-width:500px) {
+    .bt-agg button {
+        margin-top: 0.5em;
+    }
+    
+    .link {
+        flex-direction: column;
     }
     #header {
-        width: 89%;
-    }
-
-    .bt-agg button {
-        margin: 1em 0em;
+        width: 87%;
     }
 
     #header a img {
         padding-right: 0.5em;
     }
 
-    .form-group-nombre{ 
-        display: flex;
-        flex-direction: column;
-    }
-
-    .form-group-nombre input {
-        width: auto;
+    #descripcionP {
+        width: 85%;
     }
 
     .container {
-        font-size: 0.8em;
-        width: 70%;
+        font-size: 1em;
+        width: 300px;
         height: fit-content;
         padding: 0.7em;
     }
@@ -156,10 +129,10 @@ h4 {
     .login-contenedor h1 {
         padding: 0 0 10px 10px;
     }
-
     .login-input label {
         font-size: 1.8em;
     }
+
 
     .login-registrarse {
         font-size: 1.8em;

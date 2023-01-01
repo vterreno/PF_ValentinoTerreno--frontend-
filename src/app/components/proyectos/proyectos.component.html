@@ -3,50 +3,37 @@
         <h2 id="proyectos">Proyectos</h2>
         <hr>
     </div>
-    <div class="contenedor">
-        <div class="caja">
-            <div class="caja-imagen">
-                <img src="../../../assets/demo-proyectos.jpg" alt="demo-proyectos" width="100%">
-            </div>
-            <div class="caja-texto">
-                <h2>Aplicacion web para videojuegos</h2>
-                <p>Esta app muestra tus estadisticas en tiempo real de tus juegos favoritos</p>
-            </div>
-            <div class="caja-btn">
-                <button><a href="#">Demo</a></button>
-                <button><a href="#">Repositorio</a></button>
-            </div>
-        </div>
-    
-        <div class="caja">
-            <div class="caja-imagen">
-                <img src="../../../assets/demo-proyectos.jpg" alt="demo-proyectos" width="100%">
-            </div>
-            <div class="caja-texto">
-                <h2>Aplicacion web para videojuegos</h2>
-                <p>Esta app muestra tus estadisticas en tiempo real de tus juegos favoritos</p>
-            </div>
-            <div class="caja-btn">
-                <button><a href="#">Demo</a></button>
-                <button><a href="#">Repositorio</a></button>
-            </div>
-        </div>
-    
-        <div class="caja">
-            <div class="caja-imagen">
-                <img src="../../../assets/demo-proyectos.jpg" alt="demo-proyectos" width="100%">
-            </div>
-            <div class="caja-texto">
-                <h2>Aplicacion web para videojuegos</h2>
-                <p>Esta app muestra tus estadisticas en tiempo real de tus juegos favoritos</p>
-            </div>
-            <div class="caja-btn">
-                <button><a href="#">Demo</a></button>
-                <button><a href="#">Repositorio</a></button>
-            </div>
-        </div>
-
-        
+    <table>
+        <tr *ngFor="let Proyecto of proyecto">
+            <td>
+                <div class="caja">
+                    <div class="caja-imagen">
+                        <img src={{Proyecto.img}} alt="demo-proyectos" width="50%" height="20%">
+                    </div>
+                    <div class="caja-texto">
+                        <h2>{{Proyecto.nombreP}}</h2>
+                        <p>{{Proyecto.descripcionP}}</p>
+                    </div>
+                    <div class="botones">
+                        <div class="caja-btn">
+                            <button><a href={{Proyecto.demo}} target="_blank">Demo</a></button>
+                            <button><a href={{Proyecto.repo}} target="_blank">Repositorio</a></button>
+                        </div>
+                        <div id="bt-edit">
+                            <Button routerLink="/editproyecto/{{Proyecto.id}}" *ngIf="isLogged"><img
+                                src="../../../assets/edit (1).png" alt="editar" id="img-tamaño"></Button>
+                            <button (click)="deleteProyecto(Proyecto.id)" *ngIf="isLogged"><img
+                                src="../../../assets/delete (1).png" alt="borrar"></button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div class="bt-aggEdu">
+        <button type="button" *ngIf="isLogged" routerLink="/nuevoproyecto">
+            <h4>Agregar Proyecto</h4>
+        </button>
     </div>
-    
 </div>

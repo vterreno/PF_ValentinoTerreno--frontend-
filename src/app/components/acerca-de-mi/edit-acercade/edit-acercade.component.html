@@ -1,4 +1,7 @@
 <body>
+    <div class="loading" *ngIf="loading">
+        <img src="../../../../assets/●●●●.gif" alt="">
+    </div>
     <div class="container">
         <div id="header">
             <a href="#"><img src="../../../assets/cruz.png" alt="Salir"></a>
@@ -11,7 +14,7 @@
                 </div>
                 <div>
                     <label for="segundoNombre">Segundo nombre</label>
-                    <input type="text" name="segundoNombre" id="segundoNombre" class="input" [(ngModel)]="persona.segundoNombre" required>
+                    <input type="text" name="segundoNombre" id="segundoNombre" class="input" [(ngModel)]="persona.segundoNombre">
                 </div>
                 
             </div>
@@ -33,17 +36,17 @@
             <div class="form-group-nombre">
                 <div>
                     <label for="img">Link imagen</label>
-                    <input type="file" name="img" id="img" class="input" [(ngModel)]="persona.img" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png">
+                    <input type="file" name="img" id="img" class="input" [(ngModel)]="persona.img" (change)="uploadImage($event)" accept=".jpg, .jpeg, .png" required>
                 </div>
                 <div>
                     <label for="img">Link PDF</label>
-                <input type="file" name="pdf" id="pdf" class="input" [(ngModel)]="persona.pdf" (change)="uploadPdf($event)" accept=".pdf">
+                <input type="file" name="pdf" id="pdf" class="input" [(ngModel)]="persona.pdf" (change)="uploadPdf($event)" accept=".pdf" required> 
                 </div>
             </div>
 
     
             <div class="bt-agg">
-                <button><h4>Editar informacion</h4></button>
+                <button (change)="loadLink($event)"><h4>Editar informacion</h4></button>
             </div>
         </form>
     </div>

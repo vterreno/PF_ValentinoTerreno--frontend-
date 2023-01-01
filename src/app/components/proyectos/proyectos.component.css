@@ -10,6 +10,14 @@
     padding: 0.2em 0em;
 }
 
+
+
+
+
+.caja-btn img {
+    width: 2em;
+}
+
 .proyectos-titulo h2 {
     display: flex;
     align-items: center;
@@ -31,7 +39,7 @@
     border-radius: 10px;
     font-family: 'Mulish';
     margin: 3em 0em;
-    width: 75%;
+    width: 60%;
     height: 30%;
     border: 1px solid black;
 }
@@ -41,7 +49,77 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
 
+table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.bt-aggEdu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bt-aggEdu button {
+    border-radius: 1em;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #FC7753;
+    border: none;
+    margin-top: 2em;
+    margin-bottom: 4em;
+}
+
+.bt-aggEdu button:hover {
+    background-color:#f95f35 ;
+}
+.bt-aggEdu button h4 {
+    color: white;
+    font-family: 'Mulish';
+    margin: 1em;
+}
+
+#bt-edit {
+    display: flex;
+    width: 6em;
+    margin-bottom: 16px;
+}
+
+#bt-edit button {
+    background-color: white;
+    color: none;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+#bt-edit button img {
+    width: 100%;
+}
+
+.caja-imagen img {
+    width: 100%;
+    object-fit: cover;
+    height: 15em;
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 @media (max-width:320px) {
@@ -52,9 +130,8 @@
 }
 
 .caja-imagen {
-    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
-    
 }
 
 .caja-imagen img {
@@ -104,7 +181,23 @@
     scroll-margin-top: 5em;
 }
 
-@media (min-width:800px) {
+@media (min-width:821px) {
+    .caja-imagen img {
+        width: 100%;
+        height: 15em;
+        object-fit: cover;
+    }
+
+    tr {
+        margin: 0em 2.5em;
+    }
+    
+    table {
+        display: grid;
+        gap: 0em;
+        grid-template-columns: repeat(3, 0.5fr);
+    }
+
     .proyectos-titulo h2 {
         font-size: 2em;
         display: flex;
@@ -122,8 +215,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
-        
-        column-gap: 3em;
+        column-gap: 1em;
         margin: 0 5em;
     }
 
@@ -137,7 +229,7 @@
     }
 
     .caja-btn a {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .proyectos {

@@ -12,8 +12,12 @@ import { PersonaService } from 'src/app/service/persona.service';
 })
 export class EditAcercadeComponent implements OnInit {
   persona: persona = null
-  constructor(private activatedRouter: ActivatedRoute, private personaService: PersonaService, private router:Router, public imgService: ImageService, public pdfService: PdfService) { }
+  public loading:boolean
 
+  constructor(private activatedRouter: ActivatedRoute, private personaService: PersonaService, private router:Router, public imgService: ImageService, public pdfService: PdfService) { 
+    this.loading = false
+  }
+  
   ngOnInit(): void {
     const id = this.activatedRouter.snapshot.params['id'];
     this.personaService.detail(id).subscribe(
@@ -29,6 +33,7 @@ export class EditAcercadeComponent implements OnInit {
   onUpdate(): void{
     const id = this.activatedRouter.snapshot.params['id'];
     this.persona.img = this.imgService.url
+    this.persona.pdf = this.pdfService.url
     this.personaService.update(id, this.persona).subscribe(
       data => {
         this.router.navigate(['']);
@@ -37,12 +42,14 @@ export class EditAcercadeComponent implements OnInit {
         this.router.navigate(['']);
       }
     )
+    this.imgService.clearURL()
   }
 
   uploadImage($event:any) {
     const id = this.activatedRouter.snapshot.params['id']
     const name = "perfil_" + id
-    this.imgService.uploadImage($event, name)
+    const flag = true
+    this.imgService.uploadImage($event, name, flag)
     console.log("Funcion upload anda")
   }
 
@@ -51,5 +58,10 @@ export class EditAcercadeComponent implements OnInit {
     const name = "pdf_" + id
     this.pdfService.uploadPdf($event, name)
     console.log("Funcion upload anda")
+  }
+
+  loadLink($event:any){
+    this.loading = true
+    
   }
 }

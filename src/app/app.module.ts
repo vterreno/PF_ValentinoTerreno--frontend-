@@ -22,7 +22,10 @@ import { EditExperienciaComponent } from './components/educacion/edit-experienci
 import { EditAcercadeComponent } from './components/acerca-de-mi/edit-acercade/edit-acercade.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
-import { provideStorage,getStorage } from '@angular/fire/storage';
+import { provideStorage, getStorage } from '@angular/fire/storage';
+import { NewProyectoComponent } from './components/proyectos/new-proyecto/new-proyecto.component';
+import { EditProyectoComponent } from './components/proyectos/edit-proyecto/edit-proyecto.component';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +44,9 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     EditeducacionComponent,
     NewExperienciaComponent,
     EditExperienciaComponent,
-    EditAcercadeComponent
+    EditAcercadeComponent,
+    NewProyectoComponent,
+    EditProyectoComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +54,7 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     HttpClientModule,
     FormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideStorage(() => getStorage())
+    provideStorage(() => getStorage()),
   ],
   providers: [
     InterceptorProvider
