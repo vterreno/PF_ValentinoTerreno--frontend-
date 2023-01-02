@@ -49,6 +49,74 @@
     
 }
 
+.skill-titulo {
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 0.5em;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bt-edit img {
+    width: 2em;
+}
+.bt-aggEdu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bt-aggEdu button {
+    border-radius: 1em;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #FC7753;
+    border: none;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.bt-aggEdu button:hover {
+    background-color:#f95f35 ;
+}
+
+.bt-aggEdu button h4 {
+    color: white;
+    font-family: 'Mulish';
+    margin: 1em;
+}
+
+#bt-edit {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+}
+
+#bt-edit button {
+    background-color: #F2EFEA;
+    color: none;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+    width: 3.5em;
+}
+
+#bt-edit button img {
+    width: 100%;
+}
+
+table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .html {
     height: 1.2em;
     border-radius: 1em;
@@ -56,6 +124,69 @@
 
 
 @media (min-width:800px) {
+    .contenedor {
+        display: grid;
+        gap: 2em;
+        grid-template-columns: repeat(2, 0.5fr);
+    }
+    
+    table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1.5em;
+    }
+
+    .bt-edit img {
+        width: 2em;
+    }
+    .bt-aggEdu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2.5em;
+    }
+    
+    .bt-aggEdu button {
+        border-radius: 1em;
+        text-decoration: none;
+        cursor: pointer;
+        background-color: #FC7753;
+        border: none;
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+    
+    .bt-aggEdu button:hover {
+        background-color:#f95f35 ;
+    }
+
+    .bt-aggEdu button h4 {
+        color: white;
+        font-family: 'Mulish';
+        margin: 1em;
+    }
+    
+    #bt-edit {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
+    }
+    
+    #bt-edit button {
+        background-color: #F2EFEA;
+        color: none;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        margin-top: 1em;
+        width: 3.5em;
+    }
+    
+    #bt-edit button img {
+        width: 100%;
+    }
     
     .skills-contenedor {
        display: flex;

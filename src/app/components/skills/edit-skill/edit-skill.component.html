@@ -1,1 +1,26 @@
-<p>edit-skill works!</p>
+<body>
+    <div class="container">
+        <div id="header">
+            <a href="#"><img src="../../../assets/cruz.png" alt="Salir"></a>
+        </div>
+        <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+            <div class="form-group">
+                <label for="titulo">Titulo skill</label>
+                <input type="text" name="titulo" id="titulo" class="inputProyect" [(ngModel)]="skill.titulo" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="porcentaje">Porcentaje</label>
+                <input type="text" name="porcentaje" id="porcentaje" class="inputProyect" [(ngModel)]="skill.porcentaje" required>
+            </div>  
+            
+            <div class="bt-agg">
+                <button><h4>Editar skill</h4></button>
+            </div>
+            
+        </form>
+    </div>  
+
+    
+</body>
+

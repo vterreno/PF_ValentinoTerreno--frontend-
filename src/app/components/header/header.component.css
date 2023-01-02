@@ -72,7 +72,7 @@ a {
     cursor: pointer;
 }
 
-@media (min-width:770px) {
+@media (min-width:856px) {
     .menu-btn {
        display: none;
     }

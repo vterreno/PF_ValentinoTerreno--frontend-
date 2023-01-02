@@ -1,0 +1,142 @@
+body {
+    background: linear-gradient(135deg, hsla(198, 83%, 67%, 1) 0%, hsla(207, 45%, 60%, 1) 40%, hsla(13, 100%, 73%, 1) 88%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.2em;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background-color: white;
+    border: 0.1em solid rgb(198, 198, 198);  
+    width: fit-content;
+    height: fit-content;
+    border-radius: 1em;
+    padding: 2em;
+
+}
+
+.container input {
+    padding: 0.5em;
+    margin: 1em;
+    border-radius: 0.3em;
+    border: 0.1em solid rgb(198, 198, 198);
+
+}
+
+.container label {
+    color: #e16341;
+    margin-left: 0.7em;
+}
+
+input:focus {
+    border-color:#d3d0ff;
+}
+
+.bt-agg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bt-agg button {
+    background-color: none;
+    width: 17em;
+    border-radius: 2em;
+    background-color: #fe8462;
+    border: 0em;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+.bt-agg button:hover {
+    background-color: #c7674d;
+}
+
+h4 {
+    color: white;
+    font-size: 1em;
+}
+
+#header {
+    width: 20em;
+    border-radius: 1em;
+    display: flex;
+    background-color: #fe8462;
+    align-items: flex-end;
+    padding: 1em;
+    margin-bottom: 1em;
+    
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#header a img{
+    height: 1.5em;
+    padding-right: 2em;
+    font-size: 0.5em
+}
+
+#descripcionP {
+    resize: none;
+    width: 90%;
+    height: 5em;
+    margin: 1em;
+    padding: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width:500px) {
+    .bt-agg button {
+        margin-top: 0.5em;
+    }
+    
+    .link {
+        flex-direction: column;
+    }
+    #header {
+        width: 87%;
+    }
+
+    #header a img {
+        padding-right: 0.5em;
+    }
+
+    #descripcionP {
+        width: 85%;
+    }
+
+    .container {
+        font-size: 1em;
+        width: 300px;
+        height: fit-content;
+        padding: 0.7em;
+    }
+
+    .login-contenedor h1 {
+        padding: 0 0 10px 10px;
+    }
+    .login-input label {
+        font-size: 1.8em;
+    }
+
+
+    .login-registrarse {
+        font-size: 1.8em;
+    }
+
+}
+

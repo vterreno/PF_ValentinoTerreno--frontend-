@@ -4,16 +4,23 @@
         <hr>
     </div>
 
-    <div class="skills-contenedor">
-        <table>
+    <table>
+        <div class="contenedor">
             <tr *ngFor="let Skills of skills">
                 <td>
-                    <h6>{{Skills.titulo}}</h6>
+                    <h4 class="skill-titulo">{{Skills.titulo}}</h4>
                     <span class="bar"><img class="html" width="{{Skills.porcentaje}}" src="../../../assets/rectangulo.png"></span>
+                    <div id="bt-edit">
+                        <Button routerLink="/editskill/{{Skills.id}}" *ngIf="isLogged"><img
+                            src="../../../assets/edit (1).png" alt="editar" id="img-tamaño"></Button>
+                        <button (click)="deleteSkill(Skills.id)" *ngIf="isLogged"><img
+                            src="../../../assets/delete (1).png" alt="borrar"></button>
+                    </div>
                 </td>
             </tr>
-        </table>
-    </div>
+        </div>
+           
+    </table>
     
     <div class="bt-aggEdu">
         <button type="button" *ngIf="isLogged" routerLink="/nuevoskill">
